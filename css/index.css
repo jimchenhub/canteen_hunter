@@ -1,0 +1,31 @@
+.content {
+    width: 100%;
+    background-image: url("../images/startupBg.png");
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -webkit-background-size:cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/startupBg.png,sizingMethod=scale);
+}
+
+#title {
+    position: relative;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-family: JCfg,HelveticaNeue-Light;
+    font-size: 80px;
+    color: #fff;
+}
+
+#footer {
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    font-family: HelveticaNeue-Light;
+    font-size: 15px;
+    color: #fff;
+}

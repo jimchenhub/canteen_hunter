@@ -1,4 +1,4 @@
-.content {
+.startup {
     width: 100%;
     background-image: url("../images/startupBg.png");
     -moz-background-size:cover;
@@ -7,7 +7,7 @@
     filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/startupBg.png,sizingMethod=scale);
 }
 
-#title {
+.startup #title {
     position: relative;
     top: 30%;
     left: 0%;
@@ -19,7 +19,7 @@
     color: #fff;
 }
 
-#footer {
+.startup #footer {
     position: absolute;
     bottom: 5px;
     left: 10%;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canteen Hunter Prototype</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="css/ios-checkbox.css">
+</head>
+<body>
+
+<div class="screen">
+  <div class="content signup">
+    <p id="title">Foodie</p>
+    <p class="subtitle" id="subtitle1">账户信息</p>
+    <form id="input-form">
+        <input type="text" placeholder="昵称">
+        <input type="text" placeholder="电子邮箱">
+        <input type="password" placeholder="密码">
+    </form>
+    <p class="subtitle" id="subtitle2">个人信息</p>
+    <div id="input-select">
+        <div class="select-item">
+            <p class="label">是否为穆斯林</p>
+            <!-- <input type="checkbox" class="ios-switch" checked> -->
+            <label class="ios-check yellow"><input type="checkbox" checked="checked"><i></i></label>
+        </div>
+        <div class="select-item">
+            <p class="label">偏好口味</p>
+            <select>
+                <option>不限</option>
+                <option>甜</option>
+                <option>辣</option>
+                <option>酸</option>
+            </select>
+        </div>
+        <div class="select-item">
+            <p class="label">价格区间</p>
+            <select>
+                <option>不限</option>
+                <option>10-20</option>
+                <option>15-25</option>
+                <option>20-30</option>
+            </select>
+        </div>
+    </div>
+    <p id="sign-btn">注册</p>
+
+    <script type="text/javascript">
+      $(".signup #sign-btn").click(function(){
+        jumpToPage('canteen.html','fade');
+        return false;
+      });
+    </script>
+
+  </div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>

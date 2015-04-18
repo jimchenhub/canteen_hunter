@@ -1,0 +1,107 @@
+.signup {
+    width: 100%;
+    background-image: url("../images/startupBg.png");
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -webkit-background-size:cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/startupBg.png,sizingMethod=scale);
+}
+
+.signup #title {
+    position: relative;
+    width: 100%;
+    margin: 10% 0 10px 0;
+    text-align: center;
+    font-family: 'Roboto-Thin';
+    color: #fff;
+    font-size: 50px;
+}
+
+/* subtitle */
+.signup .subtitle {
+    width: 25%;
+    margin: 5px 0px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: STHeitiSC-Light;
+}
+.signup #subtitle1 {
+    background-color: rgb(233,92,91);
+}
+.signup #subtitle2 {
+    background-color: rgb(60,123,218);
+}
+
+/* first input */
+.signup #input-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+/* 输入框 */
+.signup #input-form input {
+    width: 80%;
+    margin: 5px 10% 10px 10%;
+    height: 30px;
+    background-color: rgba(255,255,255,0);
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-family: STHeitiSC-Light;
+    font-size: 14px;
+}
+/* 设置placeholder */
+.signup ::-webkit-input-placeholder { color: #fff } /* WebKit browsers */
+.signup :-moz-placeholder { color: #fff } /* Mozilla Firefox 4 to 18 */
+.signup ::-moz-placeholder { color: #fff } /* Mozilla Firefox 19+ */
+.signup :-ms-input-placeholder { color: #fff } /* Internet Explorer 10+ */
+
+/* select part */
+.signup #input-select {
+    position: relative;
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: rgba(128,128,128,0.4);
+}
+
+.signup .select-item {
+    float: left;
+    width: 100%;
+    height: 33.3px;
+    margin: 0px;
+    line-height: 33.3px;
+}
+
+.signup .select-item .label {
+    float: left;
+    width: 50%;
+    margin: 0px;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    font-family: STHeitiSC-Light;
+}
+.signup .select-item label.ios-check {
+    float: right;
+}
+.signup .select-item select {
+    float: right;
+    margin-top: 8px;
+    background-color: rgba(0,0,0,0);
+    color: rgb(246,230,39);
+    border: 0;
+}
+
+.signup #sign-btn {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    font-family: STHeitiSC-Light;
+    cursor: pointer;
+}

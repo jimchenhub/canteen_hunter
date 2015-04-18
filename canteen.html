@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canteen Hunter Prototype</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/canteen.css">
+</head>
+<body>
+
+<div class="screen">
+  <div class="content canteen">
+    <img id="status-bar" src="images/statusBarBlack.png">
+    <div id="navbar">
+        <p id="item-condition"><i class="fa fa-align-justify"></i> 距离</p>
+        <i id="item-search" class="fa fa-search"></i>
+    </div>
+    <div id="canteen-list">
+        <p id="list-title">餐厅列表</p>
+        <div class="canteen-item">
+            <img class="canteen-item-photo" src="images/startupBg.png">
+            <p class="canteen-item-name">东园食堂</p>
+            <p class="canteen-item-info">
+                <span>3人</span>
+                <span>2.0km</span>
+                <span><i class="fa fa-heart"></i> 100</span>
+            </p>
+        </div>
+        <div class="canteen-item">
+            <img class="canteen-item-photo" src="images/startupBg.png">
+            <p class="canteen-item-name">东园食堂</p>
+            <p class="canteen-item-info">
+                <span>3人</span>
+                <span>2.0km</span>
+                <span><i class="fa fa-heart"></i> 100</span>
+            </p>
+        </div>
+        <div class="canteen-item">
+            <img class="canteen-item-photo" src="images/startupBg.png">
+            <p class="canteen-item-name">东园食堂</p>
+            <p class="canteen-item-info">
+                <span>3人</span>
+                <span>2.0km</span>
+                <span><i class="fa fa-heart"></i> 100</span>
+            </p>
+        </div>
+        <div class="canteen-item">
+            <img class="canteen-item-photo" src="images/startupBg.png">
+            <p class="canteen-item-name">东园食堂</p>
+            <p class="canteen-item-info">
+                <span>3人</span>
+                <span>2.0km</span>
+                <span><i class="fa fa-heart"></i> 100</span>
+            </p>
+        </div>
+        <div class="canteen-item">
+            <img class="canteen-item-photo" src="images/startupBg.png">
+            <p class="canteen-item-name">东园食堂</p>
+            <p class="canteen-item-info">
+                <span>3人</span>
+                <span>2.0km</span>
+                <span><i class="fa fa-heart"></i> 100</span>
+            </p>
+        </div>
+    </div>
+    <div id="tabbar">
+        <div class="tab-item active">
+            <img src="images/tabicon1.png">
+        </div>
+        <div class="tab-item">
+            <img src="images/tabicon2.png">
+        </div>
+        <div class="tab-item">
+            <img src="images/tabicon3.png">
+        </div>
+    </div>
+
+    <script type="text/javascript"> 
+        $(".canteen").scroll(function(){
+            var top = $(this).scrollTop();
+            $("#tabbar").css("bottom", -top);
+        });
+    </script>
+  
+  </div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>

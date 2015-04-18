@@ -9,19 +9,30 @@
 <body>
 
 <div class="screen">
-  <div class="content">
+  <div class="content login">
     <p id="title">Foodie</p>
     <form id="input-form">
         <input type="text" placeholder="电子邮箱">
         <input type="password" placeholder="密码">
     </form>
     <a id="log-btn">Login</a>
-    <a id="forget-btn">忘记密码?</a>
+    <a id="forget-btn">现在注册</a>
+
+    <script type="text/javascript">
+      $(".login #log-btn").click(function(){
+        jumpToPage('canteen.html','fade');
+        return false;
+      });
+      $(".login #forget-btn").click(function(){
+        jumpToPage('signup.html');
+        return false;
+      });
+    </script>    
+  
   </div>
 </div>
 
 </body>
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/login.js"></script>
 </html>

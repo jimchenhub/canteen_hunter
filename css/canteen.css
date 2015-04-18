@@ -1,0 +1,121 @@
+.canteen {
+    width: 100%;
+    background-image: url("../images/canteenBg.png");
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -webkit-background-size:cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/startupBg.png,sizingMethod=scale);
+}
+
+/* status bar */
+.canteen #status-bar {
+    float: left;
+    margin: 3px 0px;
+    width: 100%;
+}
+
+/* navbar */
+.canteen #navbar {
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(256,256,256,0.5);
+}
+.canteen #item-condition {
+    float: left;
+    margin: 0px 3px;
+    color: rgb(60,123,218);
+    font-family: STHeitiSC-Light;
+}
+.canteen #item-search {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-right: 3px;
+    padding: 2px 0px 0px 3px;
+    color: rgb(246,230,39);
+    border: 2px solid rgb(246,230,39);
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* canteen list */
+.canteen #canteen-list {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.canteen #list-title {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: STHeitiSC-Light;
+}
+
+.canteen .canteen-item {
+    float: left;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgba(256,256,256,0.5);
+    border-bottom: 1px solid rgba(256,256,256,0.5);
+    font-family: STHeitiSC-Light;
+}
+
+.canteen .canteen-item-photo {
+    float: left;
+    width: 30%;
+    height: 80px;
+}
+
+.canteen .canteen-item-name {
+    float: left;
+    margin: 30px 0 0 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.canteen .canteen-item-info {
+    position: relative;
+    top: 10px;
+    right: 5px;
+    float: right;
+    width: 70%;
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+    color: rgb(246,230,39);
+}
+
+.canteen .canteen-item-info span {
+    margin: 0 3px;
+}
+.canteen .fa-heart { color: rgb(233,92,91) }
+
+/* tab bar part */
+.canteen #tabbar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(233,92,91); 
+}
+
+.canteen .tab-item {
+    float: left;
+    width: 33.333%;
+    height: 40px;
+    line-height: 40px;
+}
+.canteen .tab-item.active {
+    background-color: rgb(60,123,218);
+}
+.canteen .tab-item img {
+    height: 60%;
+    width: 30%;
+    margin-top: 8px;
+    margin-left: 35%;
+}

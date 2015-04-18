@@ -1,4 +1,4 @@
-.content {
+.login {
     width: 100%;
     background-image: url("../images/startupBg.png");
     -moz-background-size:cover;
@@ -7,23 +7,23 @@
     filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/startupBg.png,sizingMethod=scale);
 }
 
-#title {
+.login #title {
     position: relative;
     width: 100%;
-    margin: 20% 0 0 0;
+    margin: 15% 0 0 0;
     text-align: center;
     font-family: 'Roboto-Thin';
     color: #fff;
     font-size: 50px;
 }
 
-#input-form {
+.login #input-form {
     position: relative;
     width: 100%;
     height: auto;
 }
 /* 输入框 */
-#input-form input {
+.login #input-form input {
     width: 80%;
     margin: 10px 10%;
     height: 40px;
@@ -34,14 +34,15 @@
     font-family: STHeitiSC-Light;
 }
 /* 设置placeholder */
-::-webkit-input-placeholder { color: #fff } /* WebKit browsers */
-:-moz-placeholder { color: #fff } /* Mozilla Firefox 4 to 18 */
-::-moz-placeholder { color: #fff } /* Mozilla Firefox 19+ */
-:-ms-input-placeholder { color: #fff } /* Internet Explorer 10+ */
+.login ::-webkit-input-placeholder { color: #fff } /* WebKit browsers */
+.login :-moz-placeholder { color: #fff } /* Mozilla Firefox 4 to 18 */
+.login ::-moz-placeholder { color: #fff } /* Mozilla Firefox 19+ */
+.login :-ms-input-placeholder { color: #fff } /* Internet Explorer 10+ */
+
 
 /* 设置两个按钮 */
-#log-btn, #forget-btn { cursor: pointer }
-#log-btn {
+.login #log-btn, .login #forget-btn { cursor: pointer }
+.login #log-btn {
     display: block;
     position: relative;
     width: 100%;
@@ -52,7 +53,7 @@
     font-family: 'Roboto-Regular';
 }
 
-#forget-btn {
+.login #forget-btn {
     display: block;
     position: relative;
     width: 100%;

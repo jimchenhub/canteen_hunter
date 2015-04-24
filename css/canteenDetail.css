@@ -1,0 +1,195 @@
+.canteen-detail {
+    width: 100%;
+    background-image: url("../images/canteenBg.png");
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -webkit-background-size:cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/startupBg.png,sizingMethod=scale);
+}
+
+/* status bar */
+.canteen-detail #status-bar {
+    float: left;
+    margin: 3px 0px;
+    width: 100%;
+}
+
+/* top bar part */
+.canteen-detail #top-bar {
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fafafa;
+    font-family: STHeitiSC-Light;
+}
+
+.canteen-detail #img-back {
+    float: left;
+    margin: 5px 0 0 3px;
+    cursor: pointer;
+}
+
+.canteen-detail #title {
+    float: left;
+    width: 45%;
+    margin: 0px;
+    text-align: center;
+}
+
+.canteen-detail #title-back {
+    float: left;
+    width: 20%;
+    margin: 0px 3px;
+    color: rgb(60,123,218);
+    cursor: pointer;
+}
+
+.canteen-detail #title-edit {
+    float: right;
+    width: 20%;
+    margin: 0px 5px 0 0;
+    color: rgb(60,123,218);
+    text-align: right;
+    cursor: pointer;
+}
+/*--*/
+
+.canteen-detail #canteen-picture {
+    float: left;
+    width: 100%;
+    max-height: 200px;
+}
+
+.canteen-detail #basic-info {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    font-family: STHeitiSC-Light;
+}
+
+.canteen-detail #name {
+    float: left;
+    margin: 0px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.canteen-detail #canteen-info {
+    float: right;
+    margin: 0px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 12px;
+    color: rgb(246,230,39); 
+}
+.canteen-detail #canteen-info img { height: 10px }
+
+/* evaluation part */
+.canteen-detail #canteen-evaluation {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: rgba(256,256,256,0);
+    font-family: STHeitiSC-Light;
+}
+
+.canteen-detail #evaluation-title {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px;
+    color: rgb(246,230,39);
+    border: 1px solid rgba(256,256,256,0.5);
+}
+
+.canteen-detail .evaluation-item {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: 1px solid rgba(256,256,256,0.5);   
+}
+
+.canteen-detail .evaluation-item .left {
+    float: left;
+    height: auto;
+    padding: 10px;
+}
+
+.canteen-detail .evaluation-item .person-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.canteen-detail .evaluation-item .person-name {
+    text-align: center;
+    margin: 0px;
+    font-family: 'Roboto-Regular';
+}
+
+.canteen-detail .evaluation-item .right {
+    padding: 10px;
+}
+
+/* write down evaluation */
+.canteen-detail #write-evaluation {
+    display: none;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.canteen-detail #tip-title {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px;
+    color: rgb(246,230,39);
+    border: 1px solid rgba(256,256,256,0.5);
+}
+
+.canteen-detail #my-evaluation {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding:0px;
+    resize: none;
+}
+
+.canteen-detail #submit-button {
+    float: right;
+    margin: 5px;
+}
+
+/* tab bar part */
+.canteen-detail #tabbar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(233,92,91); 
+}
+
+.canteen-detail .tab-item {
+    float: left;
+    width: 33.333%;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.canteen-detail .tab-item.active {
+    background-color: rgb(60,123,218);
+}
+.canteen-detail .tab-item img {
+    height: 60%;
+    width: 30%;
+    margin-top: 8px;
+    margin-left: 35%;
+}

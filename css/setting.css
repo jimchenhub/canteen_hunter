@@ -1,0 +1,145 @@
+.setting {
+    width: 100%;
+    background-image: url("../images/canteenBg.png");
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -webkit-background-size:cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/startupBg.png,sizingMethod=scale);
+}
+
+/* status bar */
+.setting #status-bar {
+    float: left;
+    margin: 3px 0px;
+    width: 100%;
+}
+
+.setting #title {
+    position: relative;
+    width: 100%;
+    margin: 10% 0 10px 0;
+    text-align: center;
+    font-family: 'Roboto-Thin';
+    color: #fff;
+    font-size: 30px;
+}
+
+/* subtitle */
+.setting .subtitle {
+    width: 25%;
+    margin: 5px 0px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: STHeitiSC-Light;
+}
+.setting #subtitle1 {
+    background-color: rgb(233,92,91);
+}
+.setting #subtitle2 {
+    background-color: rgb(60,123,218);
+}
+
+/* first input */
+.setting #info-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-family: STHeitiSC-Light;
+}
+
+.setting .info-item {
+    padding-left: 10%;
+    width: 80%;
+    color: #fff;
+}
+
+.setting .info-item .info-title {
+    display: inline-block;
+    width: 40%;
+}
+.setting .info-item .info-content {
+    display: inline-block;
+    width: 60%;
+}
+
+.setting #password-button {
+    display: inline-block;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 35px;
+    margin: 20px 0px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(233,92,91);
+    border-radius: 10px;
+    font-family: STHeitiSC-Light;
+    cursor: pointer;
+}
+
+/* select part */
+.setting #input-select {
+    position: relative;
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: rgba(128,128,128,0.4);
+}
+
+.setting .select-item {
+    float: left;
+    width: 100%;
+    height: 33.3px;
+    margin: 0px;
+    line-height: 33.3px;
+}
+
+.setting .select-item .label {
+    float: left;
+    width: 50%;
+    margin: 0px;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    font-family: STHeitiSC-Light;
+}
+.setting .select-item label.ios-check {
+    float: right;
+}
+.setting .select-item select {
+    float: right;
+    margin-top: 8px;
+    background-color: rgba(0,0,0,0);
+    color: rgb(246,230,39);
+    border: 0;
+}
+
+/* tab bar part */
+.setting #tabbar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(233,92,91); 
+}
+
+.setting .tab-item {
+    float: left;
+    width: 33.333%;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.setting .tab-item.active {
+    background-color: rgb(60,123,218);
+}
+.setting .tab-item img {
+    height: 60%;
+    width: 30%;
+    margin-top: 8px;
+    margin-left: 35%;
+}

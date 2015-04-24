@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canteen Hunter Prototype</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/canteenDetail.css">
+</head>
+<body>
+
+<div class="screen">
+  <div class="content canteen-detail">
+    <img id="status-bar" src="images/statusBarBlack.png">
+    <div id="top-bar">
+        <img id="img-back" src="images/backArrow.png"> 
+        <p id="title-back">返回</p> 
+        <p id="title">餐厅详情</p> 
+        <p id="title-edit">Edit</p>
+    </div>
+
+    <img id="canteen-picture" src="images/canteen1.jpg">
+    <div id="basic-info">
+        <p id="name">东园食堂</p>
+        <p id="canteen-info">
+            <span>3人</span>
+            <span>2.0km</span>
+            <span><img src="images/love.png"> 100</span>
+        </p>
+    </div>
+
+    <div id="canteen-evaluation">
+        <p id="evaluation-title">餐厅评价(1)</p>
+        <div class="evaluation-item">
+            <div class="left">
+                <img src="images/head.jpg" class="person-img">
+                <p class="person-name">Lady.M</p>
+            </div>
+            <div class="right">
+                <p>非常不错非常不错非常不错非常不错非常不错</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="write-evaluation">
+        <p id="tip-title">写下你的评价吧~</p>
+        <textarea id="my-evaluation" rows="5">
+        </textarea>
+        <img src="images/group.png" id="submit-button">
+    </div>
+
+    <div id="tabbar">
+        <div class="tab-item active" id="tab1">
+            <img src="images/tabicon1.png">
+        </div>
+        <div class="tab-item" id="tab2">
+            <img src="images/tabicon2.png">
+        </div>
+        <div class="tab-item" id="tab3">
+            <img src="images/tabicon3.png">
+        </div>
+    </div>
+
+    <script type="text/javascript"> 
+        //固定tab
+        $(".canteen-detail").scroll(function(){
+            var top = $(this).scrollTop();
+            $("#tabbar").css("bottom", -top);
+        });
+
+        //点击跳转
+        $(".tab-item").click(function(){
+            var id = $(this).attr("id");
+            if (id == "tab1") {
+                jumpToPage('canteen.html')
+            } else if (id == "tab2") {
+                jumpToPage('recommendation.html')
+            } else if (id == "tab3") {
+                jumpToPage('setting.html')
+            }
+        });
+
+        //返回餐厅列表
+        $("#title-back, #img-back").click(function(){
+            jumpToPage('canteen.html');
+            return false;
+        });
+
+        //切换编辑与否
+        $("#title-edit").click(function(){
+            if ($("#write-evaluation").css("display") == "none"){
+                $("#write-evaluation").css("display","block");
+                $(".content").animate({scrollTop: $("#write-evaluation").offset().top}, 1000);
+            } else {
+                $("#write-evaluation").css("display", "none");
+            }
+        });
+
+    </script>
+  
+  </div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>

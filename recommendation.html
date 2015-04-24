@@ -4,19 +4,26 @@
   <meta charset="UTF-8">
   <title>Canteen Hunter Prototype</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/canteen.css">
+  <link rel="stylesheet" href="css/recommendation.css">
 </head>
 <body>
+
 <div class="screen">
-  <div class="content canteen">
+  <div class="content recommendation">
     <img id="status-bar" src="images/statusBarBlack.png">
-    <div id="navbar">
-        <img id="img-shape" src="images/shape.png"> 
-        <p id="item-condition">距离</p>
-        <img id="item-search" src="images/search.png">
-    </div>
     <div id="canteen-list">
-        <p id="list-title">餐厅列表</p>
+        <p id="list-title">餐厅推荐</p>
+        
+        <div id="condition-list">
+            <div class="condition-choice active" id="condition1">
+                综合
+            </div>
+            <div class="condition-choice" id="condition2">
+                评价
+            </div>
+            <img src="images/conditionPencil.png" id="condition-pencil">
+        </div>
+
         <div class="canteen-item">
             <img class="canteen-item-photo" src="images/canteen1.jpg">
             <p class="canteen-item-name">东园食堂</p>
@@ -72,27 +79,28 @@
             </p>
         </div>
     </div>
+
     <div id="tabbar">
-        <div class="tab-item active" id="tab1">
+        <div class="tab-item" id="tab1">
             <img src="images/tabicon1.png">
         </div>
-        <div class="tab-item" id="tab2">
+        <div class="tab-item active" id="tab2">
             <img src="images/tabicon2.png">
         </div>
         <div class="tab-item" id="tab3">
             <img src="images/tabicon3.png">
         </div>
     </div>
-
-    <script type="text/javascript"> 
-        //固定tab
-        $(".canteen").scroll(function(){
+  
+    <script type="text/javascript">
+        //固定tab 
+        $(".recommendation").scroll(function(){
             var top = $(this).scrollTop();
             $("#tabbar").css("bottom", -top);
         });
 
         //点击跳转
-        $(".canteen .tab-item").click(function(){
+        $(".recommendation .tab-item").click(function(){
             var id = $(this).attr("id");
             if (id == "tab1") {
                 jumpToPage('canteen.html')
@@ -104,12 +112,17 @@
         });
 
         //餐厅详情
-        $(".canteen-item").click(function(){
+        $(".recommendation .canteen-item").click(function(){
             jumpToPage('canteenDetail.html');
         });
 
+        //自定义条件
+        $("#condition-pencil").click(function(){
+            jumpToPage('condition.html');
+        });
+
     </script>
-  
+
   </div>
 </div>
 

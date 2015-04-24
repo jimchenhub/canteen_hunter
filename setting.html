@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canteen Hunter Prototype</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/setting.css">
+  <link rel="stylesheet" href="css/ios-checkbox.css">
+</head>
+<body>
+
+<div class="screen">
+  <div class="content setting">
+    <img id="status-bar" src="images/statusBarBlack.png">
+
+    <p id="title">设置</p>
+    <p class="subtitle" id="subtitle1">账户信息</p>
+    <div id="info-form">
+        <p class="info-item"><span class="info-title">昵称</span><span class="info-content">chenlvjie</span></p>
+        <p class="info-item"><span class="info-title">电子邮箱</span><span class="info-content">test@test.com</span></p> 
+    </div>
+    <a id="password-button">修改密码</a>
+
+    <p class="subtitle" id="subtitle2">个人信息</p>
+    <div id="input-select">
+        <div class="select-item">
+            <p class="label">是否为穆斯林</p>
+            <!-- <input type="checkbox" class="ios-switch" checked> -->
+            <label class="ios-check yellow"><input type="checkbox" checked="checked"><i></i></label>
+        </div>
+        <div class="select-item">
+            <p class="label">偏好口味</p>
+            <select>
+                <option>不限</option>
+                <option>甜</option>
+                <option>辣</option>
+                <option>酸</option>
+            </select>
+        </div>
+        <div class="select-item">
+            <p class="label">价格区间</p>
+            <select>
+                <option>不限</option>
+                <option>10-20</option>
+                <option>15-25</option>
+                <option>20-30</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="tabbar">
+        <div class="tab-item" id="tab1">
+            <img src="images/tabicon1.png">
+        </div>
+        <div class="tab-item" id="tab2">
+            <img src="images/tabicon2.png">
+        </div>
+        <div class="tab-item active" id="tab3">
+            <img src="images/tabicon3.png">
+        </div>
+    </div>
+  
+    <script type="text/javascript">
+        //固定tab 
+        $(".setting").scroll(function(){
+            var top = $(this).scrollTop();
+            $("#tabbar").css("bottom", -top);
+        });
+
+        //点击跳转
+        $(".tab-item").click(function(){
+            var id = $(this).attr("id");
+            if (id == "tab1") {
+                jumpToPage('canteen.html')
+            } else if (id == "tab2") {
+                jumpToPage('recommendation.html')
+            } else if (id == "tab3") {
+                jumpToPage('setting.html')
+            }
+        });
+
+        //转到修改密码
+        $("#password-button").click(function(){
+            jumpToPage('changePassword.html');
+            return false;
+        });
+
+    </script>
+
+  </div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>
